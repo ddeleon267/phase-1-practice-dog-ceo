@@ -42,7 +42,8 @@ function renderAllBreeds(dogs) {
     breedDropDown.addEventListener('change', updateValue);
     function updateValue(e) {
         const selectedLetter = e.target.value; 
-        debugger
+        
+
 
     }
 }
