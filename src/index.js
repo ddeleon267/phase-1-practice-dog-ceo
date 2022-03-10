@@ -5,7 +5,6 @@ const allDogs = []
 document.addEventListener('DOMContentLoaded', function(){
     fetchFromApi()
     const breedDropDown = document.getElementById('breed-dropdown');
-    breedDropDown.addEventListener('change', updateValue);
 });
 
 function fetchFromApi() {
