@@ -1,10 +1,10 @@
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
 const breedUrl = 'https://dog.ceo/api/breeds/list/all'
 const allDogs = []
+const breedDropDown = document.getElementById('breed-dropdown');
 
 document.addEventListener('DOMContentLoaded', function(){
     fetchFromApi()
-    const breedDropDown = document.getElementById('breed-dropdown');
 });
 
 function fetchFromApi() {
@@ -41,8 +41,12 @@ function renderAllBreeds(dogs) {
     
 }
 
+// Challenge 4: filter breeds from dropdown
 function updateValue(e) {
+
+    // grab value from dropdown?
 }
+
 
 // part of challenge 2
 function renderSingleBreed(dog, ul) { 
