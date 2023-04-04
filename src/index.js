@@ -38,19 +38,7 @@ function renderAllBreeds(dogs) {
         renderSingleBreed(dogs[i], ul)   
         allDogs.push(dogs[i])
     }
-
-
     
-    
-}
-
-function updateValue(e) {
-    const selectedLetter = e.target.value;
-    const selectedBreeds = allDogs.filter(breed => breed.startsWith(selectedLetter))
-    const ul = document.getElementById("dog-breeds")//
-  
-    ul.innerHTML = ""//
-    renderAllBreeds(selectedBreeds)//
 }
 
 // part of challenge 2
