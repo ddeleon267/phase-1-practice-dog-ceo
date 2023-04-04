@@ -5,7 +5,6 @@ const allDogs = []
 document.addEventListener('DOMContentLoaded', function(){
     fetchFromApi()
     const breedDropDown = document.getElementById('breed-dropdown');
-    breedDropDown.addEventListener('change', updateValue);
 });
 
 function fetchFromApi() {
@@ -40,7 +39,8 @@ function renderAllBreeds(dogs) {
         allDogs.push(dogs[i])
     }
 
-    // Challenge 4: user can filter breeds that start with a particular letter using a dropdown
+
+    
     
 }
 
@@ -65,4 +65,3 @@ function renderSingleBreed(dog, ul) {
 function fontColor(event) {
     event.target.style.color = 'green';
 }
-
